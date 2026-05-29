@@ -2,73 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Products | PixelCraft Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form | PixelCraft Digital</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<base target="_blank">
 </head>
 <body>
 
-<header>
-    <h1>PixelCraft Digital</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Floating Background Orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
 
-<main>
-    <h2>Our Products</h2>
+    <header>
+        <div class="container">
+            <h1>PixelCraft Digital</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <form>
+    <main>
+        <div class="container">
+            <section>
+                <span class="tech-tag">&lt;enquiry_section /&gt;</span>
+                <h2>Send Us an Enquiry</h2>
+                
+                <form action="mailto:info@pixelcraftdigital.co.za" method="post" enctype="text/plain">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-        <article>
-            <h3>Business Website Template</h3>
-            <p>A modern template suitable for small businesses.</p>
-            <p><strong>Price:</strong> R1500
-            <label>
-                <input type="checkbox" name="product" value="business_template">
-                Add to cart
-            </label>
-        </article>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
 
-        <hr>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
 
-        <article>
-            <h3>Professional CV Template</h3>
-            <p>A clean CV template for students and professionals.</p>
-            <p><strong>Price:</strong> R49</p>
-            <label>
-                <input type="checkbox" name="product" value="cv_template">
-                Add to cart
-            </label>
-        </article>
+                    <input type="submit" value="Send Enquiry">
+                </form>
 
-        <hr>
+            </section>
+        </div>
+    </main>
 
-        <article>
-            <h3>Branding Kit</h3>
-            <p>Includes logo design and brand colour guidelines.</p>
-            <p><strong>Price:</strong> R1000
-            <label>
-                <input type="checkbox" name="product" value="branding_kit">
-                Add to cart
-            </label>
-        </article>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PixelCraft Digital. All rights reserved.</p>
+            <p class="footer-tech-line">&lt;/&gt; Crafted with code & passion</p>
+        </div>
+    </footer>
 
-        <br><br>
-
-        <button type="submit">Add Selected Items to Cart</button>
-
-    </form>
-</main>
-
-<footer>
-    <p>&copy; 2026 PixelCraft Digital. All rights reserved.</p>
-</footer>
-
+    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

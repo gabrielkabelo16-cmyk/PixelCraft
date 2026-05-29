@@ -2,46 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Services | PixelCraft Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | PixelCraft Digital</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<base target="_blank">
 </head>
 <body>
 
-<header>
-    <h1>PixelCraft Digital</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Floating Background Orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
 
-<main>
-    <h2>Our Services</h2>
+    <header>
+        <div class="container">
+            <h1>PixelCraft Digital</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" aria-current="page">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <article>
-        <h3>Website Design</h3>
-        <p>We design modern and user-friendly websites.</p>
-    </article>
+    <main>
+        <div class="container">
+            <section>
+                <span class="tech-tag">&lt;products_section /&gt;</span>
+                <h2>Our Products</h2>
+                
+                <form>
+                    <div class="grid">
+                        <article>
+                            <span class="product-number">01</span>
+                            <h3>Business Website Template</h3>
+                            <p>A modern template suitable for small businesses.</p>
+                            <p><strong>Price:</strong> R1500</p>
+                            <label>
+                                <input type="checkbox" name="product" value="business_template">
+                                Add to cart
+                            </label>
+                        </article>
 
-    <article>
-        <h3>CV Design</h3>
-        <p>Professional CV designs for students and job seekers.</p>
-    </article>
+                        <article>
+                            <span class="product-number">02</span>
+                            <h3>Professional CV Template</h3>
+                            <p>A clean CV template for students and professionals.</p>
+                            <p><strong>Price:</strong> R49</p>
+                            <label>
+                                <input type="checkbox" name="product" value="cv_template">
+                                Add to cart
+                            </label>
+                        </article>
 
-    <article>
-        <h3>Digital Branding</h3>
-        <p>Branding solutions to help businesses grow online.</p>
-    </article>
-</main>
+                        <article>
+                            <span class="product-number">03</span>
+                            <h3>Branding Kit</h3>
+                            <p>Includes logo design and brand colour guidelines.</p>
+                            <p><strong>Price:</strong> R1000</p>
+                            <label>
+                                <input type="checkbox" name="product" value="branding_kit">
+                                Add to cart
+                            </label>
+                        </article>
+                    </div>
 
-<footer>
-    <p>&copy; 2026 PixelCraft Digital. All rights reserved.</p>
-</footer>
+                    <br><br>
 
+                    <button type="submit">Add Selected Items to Cart</button>
+
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PixelCraft Digital. All rights reserved.</p>
+            <p class="footer-tech-line">&lt;/&gt; Crafted with code & passion</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

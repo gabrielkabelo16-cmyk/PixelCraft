@@ -1,40 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enquiry Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form | PixelCraft Digital</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<base target="_blank">
 </head>
 <body>
-  <header>
-    <h1>Send Us an Enquiry</h1>
-    <nav>
-      <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-    </nav>
-  </header>
 
-  <main>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <!-- Floating Background Orbs -->
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
 
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+    <header>
+        <div class="container">
+            <h1>PixelCraft Digital</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <label for="message">Your Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <main>
+        <div class="container">
+            <section>
+                <span class="tech-tag">&lt;enquiry_section /&gt;</span>
+                <h2>Send Us an Enquiry</h2>
+                
+                <form action="mailto:info@pixelcraftdigital.co.za" method="post" enctype="text/plain">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
-      <input type="submit" value="Send Enquiry">
-    </form>
-  </main>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com">
 
-  <footer>
-    <p>&copy; 2026 Digital Products Store</p>
-  </footer>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+
+                    <input type="submit" value="Send Enquiry">
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 PixelCraft Digital. All rights reserved.</p>
+            <p class="footer-tech-line">&lt;/&gt; Crafted with code & passion</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/scripts.js"></script>
 </body>
 </html>
